@@ -1,7 +1,12 @@
+/* General Style */
 
 body {
   margin: 0;
   background-color: #EBEBEC;
+}
+
+header, main, footer {
+  font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -21,6 +26,12 @@ hr {
   background-color:#CCC;
 }
 
+
+.logo {
+width:220px;
+}
+
+
 h2, h3 {
   color: #363436;
   text-align: center;
@@ -37,11 +48,8 @@ header h3, footer {
   font-size: 14px;
   font-weight: 200;
 }
+/* Wrapper & Background Styles */
 
-main {
-  margin: auto;
-  padding-bottom: 100px;
-}
 
 .wrapper {
   padding: 10px;
@@ -67,17 +75,15 @@ main {
   background-color: #292728;
 }
 
-.logo {
-  margin:auto;
-  width:300px;
+/* Main Style */
+
+
+main {
+  margin: auto;
+  padding-bottom: 100px;
 }
 
-header,
-nav,
-main,
-footer {
-  font-family: 'Oswald', sans-serif;
-}
+/* Footer Style */
 
 footer {
   position: fixed;
