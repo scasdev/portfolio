@@ -6,7 +6,7 @@ body {
 }
 
 header, main, footer {
-  font-family: 'Oswald', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -31,15 +31,30 @@ hr {
 width:220px;
 }
 
-
-h2, h3 {
+h1, h2, h3 {
   color: #363436;
   text-align: center;
 }
 
+h1 {
+  font-size: 28px;
+}
+
 h2 {
-  font-size: 18px;
+  font-size: 24px;
   margin: 40px 0 40px 0;
+}
+
+h3 {
+  color:#646164;
+  font-size: 22px;
+}
+
+h4 {
+  color:#363436;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
 }
 
 header h3, footer {
@@ -47,6 +62,13 @@ header h3, footer {
   text-align: center;
   font-size: 14px;
   font-weight: 200;
+}
+
+p, ol, ul {
+  color:#58595B;
+  font-size: 16px;
+  font-weight:100;
+  line-height: 150%; 
 }
 /* Wrapper & Background Styles */
 
