@@ -6,11 +6,11 @@ body {
 }
 
 header, main, footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight:200;
 }
 
 a {
-  font-weight: 900;
   color:#58595B;
   text-decoration: none;
 }
@@ -26,9 +26,16 @@ hr {
   background-color:#CCC;
 }
 
+img {
+  width: 100%;
+}
 
-.logo {
-width:220px;
+.title {
+  text-align: center;
+}
+
+.logo-sm {
+  width: 50px;
 }
 
 h1, h2, h3 {
@@ -41,18 +48,18 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   margin: 40px 0 40px 0;
 }
 
 h3 {
   color:#646164;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h4 {
   color:#363436;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   text-align: center;
 }
@@ -64,12 +71,42 @@ header h3, footer {
   font-weight: 200;
 }
 
-p, ol, ul {
+p, ol, ul, form label {
   color:#58595B;
-  font-size: 16px;
-  font-weight:100;
+  font-size: 15px;
   line-height: 150%; 
 }
+
+/* Navigation */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #58595B;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #CCC;
+}
+
+
+
 /* Wrapper & Background Styles */
 
 
@@ -102,8 +139,44 @@ p, ol, ul {
 
 main {
   margin: auto;
-  padding-bottom: 100px;
+  margin-bottom: 50px;
 }
+
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border-color:#CCC;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  background-color: #f7f7f7;
+  border-width: 1px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+/* Map Design */
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 
 /* Footer Style */
 
@@ -114,4 +187,62 @@ footer {
   width: 100%;
 }
 
+/* Groups & Items  (Mobile First) */
 
+.wrapper {
+  width: 80%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 20px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  .logo {
+    width: 150px;
+    text-align: center;
+    margin: auto 0 auto 0;
+  }
+
+  .ss {
+    width: 300px;
+    text-align: center;
+    margin: auto 0 auto 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-sm {
+    text-align: left;
+    width:50px;
+    height:50px;
+    padding-left: 10px;
+
+  }
+  
+}
